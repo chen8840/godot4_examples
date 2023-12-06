@@ -4,14 +4,32 @@ extends CharacterBody2D
 const SPEED = 100.0
 const JUMP_VELOCITY = -400.0
 
+var maskNode: Node2D
+
+var isMask = false
+
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready():
-	pass
+	if isMask:
+		return
+	var maskLayer = get_tree().get_first_node_in_group("mask_layer")
+	if maskLayer:
+		maskNode = duplicate()
+		maskNode.isMask = true
+		var material = ShaderMaterial.new()
+		material.shader = load("res://mask_player.gdshader")
+		maskNode.find_child("displayed_item").material = material
+		maskLayer.add_child(maskNode)
 
+func _process(delta):
+	if maskNode:
+		maskNode.position = position
 
 func _physics_process(delta):
+	if isMask:
+		return
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var directionX = Input.get_axis("ui_left", "ui_right")
