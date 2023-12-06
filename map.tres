@@ -1,0 +1,16 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://cppkq7nuuut7k"]
+
+[ext_resource type="Texture2D" uid="uid://cpcx3mekbkl53" path="res://assets/objects.png" id="1_yoent"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q7xmt"]
+texture = ExtResource("1_yoent")
+0:5/size_in_atlas = Vector2i(3, 4)
+0:5/0 = 0
+0:5/0/y_sort_origin = 26
+0:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:5/0/physics_layer_0/angular_velocity = 0.0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(18.208, -23.6881, 13.2583, 13.435, 13.6118, 25.4558, 6.54074, 25.4558, 7.95495, -21.9203)
+
+[resource]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_q7xmt")
