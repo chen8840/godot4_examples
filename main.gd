@@ -13,13 +13,10 @@ func _ready():
 	var playerScene = playerSceneFactory.instantiate()
 	playerScene.position.x = 200;
 	playerScene.position.y = 120;
-	_player = playerScene
 	add_child(playerScene)
 	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if (_maskPlayer && _player):
-		_maskPlayer.position = _player.position
 	pass

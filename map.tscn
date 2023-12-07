@@ -2,7 +2,7 @@
 
 [ext_resource type="Shader" path="res://mask_item.gdshader" id="1_8p0wh"]
 [ext_resource type="TileSet" uid="uid://cppkq7nuuut7k" path="res://map.tres" id="1_rg3b6"]
-[ext_resource type="Script" path="res://map.gd" id="2_1qq8v"]
+[ext_resource type="Script" path="res://map.gd" id="2_t8a33"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3uyah"]
 shader = ExtResource("1_8p0wh")
@@ -10,11 +10,11 @@ shader = ExtResource("1_8p0wh")
 [node name="Node2D" type="Node2D"]
 y_sort_enabled = true
 material = SubResource("ShaderMaterial_3uyah")
-script = ExtResource("2_1qq8v")
+script = ExtResource("2_t8a33")
 
 [node name="displayed_item" type="TileMap" parent="."]
 y_sort_enabled = true
 tile_set = ExtResource("1_rg3b6")
 format = 2
 layer_0/y_sort_enabled = true
-layer_0/tile_data = PackedInt32Array(393228, 0, 5, 851980, 0, 5, 655380, 0, 5, 524308, 0, 5)
+layer_0/tile_data = PackedInt32Array(393228, 0, 5, 851980, 0, 5, 655380, 0, 5)
