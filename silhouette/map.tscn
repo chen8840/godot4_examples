@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://bf51t0mvkbgcu"]
 
-[ext_resource type="Shader" path="res://outline/mask_item.gdshader" id="1_on5nt"]
-[ext_resource type="Script" path="res://outline/map.gd" id="2_1nhh1"]
-[ext_resource type="TileSet" uid="uid://cppkq7nuuut7k" path="res://outline/map.tres" id="3_nlcki"]
+[ext_resource type="Shader" path="res://silhouette/mask_item.gdshader" id="1_on5nt"]
+[ext_resource type="Script" path="res://silhouette/map.gd" id="2_1nhh1"]
+[ext_resource type="TileSet" uid="uid://cppkq7nuuut7k" path="res://silhouette/map.tres" id="3_nlcki"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3uyah"]
 shader = ExtResource("1_on5nt")
