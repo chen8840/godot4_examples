@@ -11,7 +11,7 @@ func _ready():
 		var maskNode = duplicate()
 		maskNode.isMask = true
 		var material = ShaderMaterial.new()
-		material.shader = load("res://mask_item.gdshader")
+		material.shader = load("res://outline/mask_item.gdshader")
 		maskNode.find_child("displayed_item").material = material
 		maskLayer.add_child(maskNode)
 

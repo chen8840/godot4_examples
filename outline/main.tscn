@@ -1,15 +1,15 @@
 [gd_scene load_steps=4 format=3 uid="uid://brl8topnvcsw1"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_bkobg"]
-[ext_resource type="Shader" path="res://mask.gdshader" id="2_0jpb7"]
+[ext_resource type="Script" path="res://outline/main.gd" id="1_ikmjf"]
+[ext_resource type="Shader" path="res://outline/mask.gdshader" id="2_pj1gl"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nx65t"]
-shader = ExtResource("2_0jpb7")
+shader = ExtResource("2_pj1gl")
 shader_parameter/outline_color = Vector3(1, 0, 0)
 
 [node name="Node2D" type="Node2D"]
 y_sort_enabled = true
-script = ExtResource("1_bkobg")
+script = ExtResource("1_ikmjf")
 
 [node name="mask_layer_container" type="SubViewportContainer" parent="."]
 z_index = 1
